@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+:root {
+   /* Colors Elements */
+   --background: #F5F3EF;
+   --paragraph: #1E1E21;
+   --headline: #1E1E21;
+   --button: #1E1E21;
+   --button-text: #F5F3EF;
+   /* Colors Illustration */
+   --stroke: #1E1E21;
+   --main: #F5F3EF;
+   --highlight: #1E1E21;
+   --secondary: #1E1E21;
+   --tertiary: #1E1E21;
+   /* Size and Dimensions */
+   --margin-center: 1.75rem auto;
+   --standard-padding: 1.75rem;
+   --standard-margin: 1.5rem;
+   /* Other sections */
+   --container-background: #F5F3EF;
+   --container-headline: #1E1E21;
+   --container-sub-headline: #1E1E21;
+   --card-background: #1E1E21;
+   --card-heading: #F5F3EF;
+   --card-paragraph: #F5F3EF;
+}
+html, body {
+   max-width: 100vw;
+   margin: 0;
+   padding: 0;
+   font-family: 'Inter', sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   color: var(--paragraph);
+   background-color: var(--background);
+   height: 200vh;
+   /*background-color: #1C2520;*/
+   /*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);*/
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+   font-family: 'Inter', sans-serif;
+   line-height: 1.75;
+   color: var(--headline);
+}
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.accent {
+   color: var(--secondary);
+}
+label, button {
+   display: block;
+}
+button {
+   background-color: var(--button);
+   border: 0;
+   padding: 8px 12px;
+   cursor: pointer;
+   border-radius: var(--standard-margin);
+   color: var(--button-text);
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.hero {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+::-webkit-scrollbar {
+   width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: var(--secondary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: var(--secondary);
+}
+
+.badge {
+   display: inline-block;
+   padding: 6px 12px; /* Adjust padding as needed */
+   border-radius: 12px; /* Use half of the height for a rounded badge */
+   background-color: var(--main); /* Choose your desired background color */
+   color: var(--tertiary); /* Text color */
+   font-weight: bold; /* Make the text bold for better visibility */
+   font-size: 10px;
+}
+.badge-alt {
+   background-color: var(--tertiary); /* Choose your desired background color */
+   color: var(--main); /* Text color */
+}
+
+/* Apply a common style to labels and inputs */
+label, select, textarea, input {
+   margin-bottom: 10px;
+   display: block;
+   width: 100%;
+   padding: 8px;
+   box-sizing: border-box;
+   font-size: 16px;
+   border-radius: 4px;
+}
+
+/* Style the select dropdown arrow */
+select {
+   appearance: none;
+   /*background: url('dropdown-arrow.png') no-repeat right; !* Replace 'dropdown-arrow.png' with your arrow icon *!*/
+   background-size: 20px;
+}
+
+/* Style the textarea */
+textarea {
+   resize: vertical;
+}
+
+/* Add focus styles */
+input:focus, select:focus, textarea:focus {
+   outline: none;
+   border-color: var(--tertiary); /* Change to your primary color */
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
